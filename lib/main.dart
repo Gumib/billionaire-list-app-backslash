@@ -1,4 +1,4 @@
-import 'package:billionaire_list_app_backslash/pages/home_page.dart';
+import 'package:billionaire_list_app_backslash/json_parse.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,12 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Billionaire List',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: const JsonParseData(),
     );
   }
 }
